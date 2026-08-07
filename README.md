@@ -20,34 +20,52 @@ React (Vite) frontend, automated backend tests, and Playwright E2E tests.
 healthcare-appointment-platform/
 ├── backend/                    # Spring Boot application
 │   ├── src/main/java/com/healthcare/appointment/
-│   │   ├── config/              # Security, OpenAPI, data seeding
-│   │   ├── controller/          # REST controllers
-│   │   ├── dto/                 # Request/response DTOs
-│   │   ├── entity/               # JPA entities
-│   │   ├── exception/            # Custom exceptions + global handler
-│   │   ├── repository/           # Spring Data repositories
-│   │   ├── security/             # JWT filter, util, user details
-│   │   └── service/               # Business logic
+│   │   ├── config/
+│   │   ├── controller/
+│   │   ├── dto/
+│   │   ├── entity/
+│   │   ├── exception/
+│   │   ├── repository/
+│   │   ├── security/
+│   │   └── service/
 │   ├── src/main/resources/
-│   │   ├── application.yml       # Default (H2) config
+│   │   ├── application.yml
 │   │   └── application-postgres.yml
-│   ├── src/test/java/...         # Unit + integration tests
+│   ├── src/test/java/...
 │   ├── Dockerfile
 │   └── pom.xml
+│
 ├── frontend/                   # React + Vite application
 │   ├── src/
-│   │   ├── api/                  # Axios client
-│   │   ├── context/                # Auth context (JWT storage)
-│   │   ├── components/             # AvailableSlots, AppointmentHistory, etc.
-│   │   └── pages/                  # Login, Register, Dashboard
-│   ├── e2e/                       # Playwright test specs
+│   │   ├── api/
+│   │   ├── context/
+│   │   ├── components/
+│   │   └── pages/
+│   ├── e2e/
 │   ├── playwright.config.js
 │   ├── Dockerfile
 │   └── package.json
+│
+├── screenshots/                # Project screenshots
+│   ├── 01-home.png
+│   ├── 02-login.png
+│   ├── 03-register.png
+│   ├── 04-dashboard.png
+│   ├── 06-book-appointment.png
+│   ├── 07-appointment-history.png
+│   ├── 08-admin-dashboard.png
+│   └── 09-swagger-api.png
+│
 ├── docs/
 │   └── database-schema.md
+│
 ├── docker-compose.yml
-└── .github/workflows/ci.yml     # CI pipeline (bonus)
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+│
+├── README.md
+└── .gitignore
 ```
 
 ## Prerequisites
@@ -157,6 +175,24 @@ cd frontend
 npx playwright install     # first time only, downloads browsers
 npm run test:e2e
 ```
+## 📸 Application Screenshots
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### Register Page
+![Login Page](screenshots/Register.png)
+
+### Login Page
+![Login Page](screenshots/login.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Swagger APIs
+![Swagger API](screenshots/swagger.png)
+
+
 
 Other useful commands:
 
