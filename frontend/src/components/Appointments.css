@@ -1,0 +1,305 @@
+.appointments-container{
+    padding:20px;
+}
+
+/* No Appointments */
+
+.no-appointments{
+
+    background:white;
+
+    padding:70px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    font-size:20px;
+
+    color:#64748b;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+/* Cards */
+
+.appointments-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+/* Individual Card */
+
+.appointment-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.appointment-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:6px;
+
+    height:100%;
+
+    background:linear-gradient(#2563eb,#60a5fa);
+
+}
+
+.appointment-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+/* Doctor */
+
+.appointment-avatar{
+
+    width:70px;
+
+    height:70px;
+
+    background:#eff6ff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:34px;
+
+    margin-bottom:20px;
+
+}
+
+/* Header */
+
+.apt-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.apt-header h3{
+
+    color:#1e293b;
+
+    margin-bottom:5px;
+
+}
+
+.department{
+
+    color:#2563eb;
+
+    font-weight:600;
+
+}
+
+/* Details */
+
+.apt-details{
+
+    margin-top:15px;
+
+}
+
+.detail-row{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:10px 0;
+
+    border-bottom:1px solid #eef2f7;
+
+}
+
+.detail-row:last-child{
+
+    border:none;
+
+}
+
+.detail-row span:first-child{
+
+    font-size:20px;
+
+}
+
+.detail-row p{
+
+    margin:0;
+
+    color:#475569;
+
+}
+
+/* Status */
+
+.apt-status{
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+.apt-status.booked{
+
+    background:#dcfce7;
+
+    color:#166534;
+
+}
+
+.apt-status.cancelled{
+
+    background:#fee2e2;
+
+    color:#991b1b;
+
+}
+
+/* Cancel Button */
+
+.cancel-btn{
+
+    margin-top:25px;
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#ef4444;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.cancel-btn:hover:not(:disabled){
+
+    transform:translateY(-3px);
+
+    background:#dc2626;
+
+}
+
+.cancel-btn:disabled{
+
+    background:#cbd5e1;
+
+    cursor:not-allowed;
+
+}
+
+/* Messages */
+
+.error-message{
+
+    background:#fee2e2;
+
+    color:#b91c1c;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+}
+
+.success-message{
+
+    background:#dcfce7;
+
+    color:#166534;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.apt-header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:15px;
+
+}
+
+.apt-status{
+
+width:100%;
+
+text-align:center;
+
+}
+
+}

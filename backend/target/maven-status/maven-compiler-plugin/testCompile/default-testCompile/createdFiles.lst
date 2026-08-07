@@ -1,0 +1,5 @@
+com\healthcare\appointment\integration\AuthIntegrationTest.class
+com\healthcare\appointment\service\AppointmentServiceTest.class
+com\healthcare\appointment\service\AuthServiceTest.class
+com\healthcare\appointment\integration\AppointmentIntegrationTest.class
+com\healthcare\appointment\integration\ConcurrentBookingTest.class

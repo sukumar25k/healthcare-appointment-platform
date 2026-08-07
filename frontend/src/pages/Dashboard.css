@@ -1,0 +1,236 @@
+.dashboard{
+    min-height:100vh;
+    background:#f4f8fc;
+}
+
+/* Header */
+
+.dashboard-header{
+
+    background:linear-gradient(135deg,#0f4c81,#2563eb);
+
+    color:white;
+
+    padding:35px 60px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.dashboard-header h1{
+
+    font-size:34px;
+
+    margin-bottom:8px;
+
+}
+
+.dashboard-header p{
+
+    opacity:.9;
+
+    font-size:16px;
+
+}
+
+/* Logout */
+
+.logout-btn{
+
+    background:white;
+
+    color:#2563eb;
+
+    border:none;
+
+    padding:12px 26px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.logout-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+/* Statistics */
+
+.dashboard-cards{
+
+    max-width:1250px;
+
+    margin:35px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    padding:0 30px;
+
+}
+
+.stat-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.stat-card h3{
+
+    color:#64748b;
+
+    margin-bottom:15px;
+
+    font-size:18px;
+
+}
+
+.stat-card span{
+
+    font-size:28px;
+
+    color:#2563eb;
+
+    font-weight:700;
+
+}
+
+/* Tabs */
+
+.tabs{
+
+    max-width:1250px;
+
+    margin:auto;
+
+    display:flex;
+
+    gap:15px;
+
+    padding:0 30px 20px;
+
+}
+
+.tab{
+
+    flex:1;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:white;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.05);
+
+}
+
+.tab:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.tab.active{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+/* Main Content */
+
+.dashboard-content{
+
+    max-width:1250px;
+
+    margin:auto;
+
+    padding:10px 30px 40px;
+
+}
+
+/* Mobile */
+
+@media(max-width:992px){
+
+.dashboard-cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.dashboard-header{
+
+flex-direction:column;
+
+text-align:center;
+
+gap:20px;
+
+padding:30px;
+
+}
+
+.dashboard-cards{
+
+grid-template-columns:1fr;
+
+}
+
+.tabs{
+
+flex-direction:column;
+
+}
+
+}
