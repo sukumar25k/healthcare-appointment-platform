@@ -177,23 +177,21 @@ npm run test:e2e
 ```
 ## 📸 Application Screenshots
 
+
 ### Home Page
-![Home Page](screenshots/home.png)
+![Home Page](screenshots/home%20page.png)
 
 ### Register Page
-![Login Page](screenshots/Register.png)
+![Register Page](screenshots/register%20page.png)
 
 ### Login Page
-![Login Page](screenshots/login.png)
+![Login Page](screenshots/signin%20page.png)
 
-### Dashboard
-![Dashboard](screenshots/dashboard.png)
+### Appointment History
+![Appointment History](screenshots/appointment%20history.png)
 
-### Swagger APIs
-![Swagger API](screenshots/swagger.png)
-
-
-
+### Swagger API
+![Swagger API](screenshots/Swagger%20API%20Documentation.png)
 Other useful commands:
 
 ```bash
